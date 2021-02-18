@@ -1,0 +1,130 @@
+body {
+  background: white;
+}
+
+.slider-main-content {
+  background: rgb(234, 232, 237);
+  padding: 50px;
+}
+.slider {
+  position: relative;
+  height: 300px;
+  width: 80%;
+  margin: 0 auto;
+  background: chartreuse;
+}
+
+.slider__slider-content {
+  height: 100%;
+  background: white;
+  padding: 5px;
+}
+.slider__image {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
+
+.img-description {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+}
+
+.slider__track-container {
+  background: rgb(234, 232, 237);
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slider__track {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  height: 100%;
+  transition: transform 250ms ease-in;
+}
+
+.slider__slide {
+  background: rgb(234, 232, 237);
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 30%;
+  height: 100%;
+}
+
+.slider__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgb(234, 232, 237);
+  border: 0;
+  cursor: pointer;
+}
+
+.slider__button--left {
+  left: -125px;
+  color: white;
+  background: rgb(234, 232, 237);
+}
+
+.slider__button--right {
+  right: -125px;
+  background: rgb(234, 232, 237);
+  color: white;
+}
+
+.arrow-right {
+  width: 75px;
+  height: 75px;
+  border: solid white;
+  border-width: 0 10px 10px 0;
+  display: inline-block;
+  padding: 3px;
+  background: rgb(234, 232, 237);
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.arrow-left {
+  width: 75px;
+  height: 75px;
+  border: solid white;
+  border-width: 0 10px 10px 0;
+  display: inline-block;
+  padding: 3px;
+  background: rgb(234, 232, 237);
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.slider__button img {
+  width: 112px;
+}
+
+.slider__nav {
+  background: rgb(234, 232, 237);
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+.slider__indicator {
+  border: 0;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background: rgba(255, 255, 255);
+  margin: 0 12px;
+  cursor: pointer;
+}
+
+.slider__indicator.current-slide {
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.is-hidden {
+  display: none;
+}

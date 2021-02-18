@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EYEPAX TEST JAVASCRIPT SLIDER</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="slider-main-content">
+    <div class="slider">
+        <button class="slider__button slider__button--left is-hidden">
+            <i class="arrow-left"></i>
+
+        </button>
+        <div class="slider__track-container">
+
+            <ul class="slider__track">
+                <li class="slider__slide current-slide one">
+                    <div class="slider__slider-content">
+                        <img width="250" height="250" class="slider__image" src="img/slide-3.jpg" alt=""/>
+                        <div class="img-description">nature three</div>
+                        </div>
+                    
+                </li>
+                <li class="slider__slide two">
+                    <div class="slider__slider-content">
+                   <img width="250" height="250" class="slider__image" src="img/slide-2.jpg" alt=""/>
+                    <div class="img-description">nature two</div>    
+                </div>            
+                </li>
+                <li class="slider__slide three">
+                    <div class="slider__slider-content">
+                    <img width="250" height="250" class="slider__image" src="img/slide-3.jpg" alt=""/>
+                    <div class="img-description">nature three</div>
+                    </div>
+
+                </li>
+                <li class="slider__slide">
+                    <div class="slider__slider-content">
+                    <img width="250" height="250" class="slider__image" src="img/slide-4.jpg" alt=""/>
+                    <div class="img-description">nature four</div>
+                    </div>
+                </li>
+            </ul>
+            
+        </div>
+        <button class="slider__button slider__button--right" >
+            <i  class="arrow-right"></i>
+        </button>
+        <div class="slider__nav">
+        <button class="slider__indicator current-slide"></button>
+        <button class="slider__indicator"></button>
+        <button class="slider__indicator"></button>
+        <button class="slider__indicator"></button>
+    </div>
+    </div>
+</div>
+   
+    <script src="carousel.js"></script>
+</body>
+</html>
